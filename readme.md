@@ -29,15 +29,20 @@ Example 2:
 gcc -o client client.c
 ./client 5546 libm.so.6 pow 2 3
 
-Compile(general):
- gcc -o client client.c
- ./client <portNo.> <dll_name> <func_name> <func_args>
- /*run ./client for usage*/
- Running the above Example 1 and Example 2 in succession 
- will return the following output at the console:
+Compile(general)
+```
+gcc -o client client.c
+./client <portNo.> <dll_name> <func_name> <func_args>
+```
+run ./client for usage
+
+Running the above Example 1 and Example 2 in succession  will return the following output at the console:
+
 ------------------------------------------------------------------------
 Successfully Enqueued
+
 8.000000
+
 ------------------------------------------------------------------------
 
 Explanation:
@@ -46,7 +51,7 @@ Successfully Enqueued /*The request has been Enqueued by the dispatcher*/
 8.000000 /*Return value of request pow 2 3 (2 raised to power 3)*/
 
 
-* Please refer to design_document.txt for understanding the code*
+* Please refer to design_document.txt for understanding the code
 * In some cases if the output doesnt match please check whether (math.h)"libm.so.6" exists at "/lib/x86_64-linux-gnu/"
 * To change the path edit PATH in dll_loader.h and HEADER_FILE in dll_loader.h 
 ------------------------------------------------------------------------
