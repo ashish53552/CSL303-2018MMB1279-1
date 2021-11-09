@@ -15,20 +15,24 @@ Compile (Please refer to examples):
 2) In one terminal (for server):
 
 Example 1:
+```
 gcc -o listener request_listener.c -lpthread -ldl
 ./listener 5546
-
+```
 compile(general):
+```
 gcc -o listener request_listener.c -lpthread -ldl
 ./listener <portNo.>
-/*./listener for usage*/
+```
+
  
 3) In the other terminal(client):
 
 Example 2:
+```
 gcc -o client client.c
 ./client 5546 libm.so.6 pow 2 3
-
+```
 Compile(general)
 ```
 gcc -o client client.c
@@ -94,12 +98,17 @@ Functionalities:
 Testing
 ------------------------------------------------------
 compile:
+```
 gcc -o unit_test unit_test.c -lpthread -ldl
 ./unit_test
-/*for output details refer to design document*/
+```
+
+for output details refer to design document
 
 ----------------------------------------------------------------------
+
 The compilation assumes the following header files are already present
+
 ----------------------------------------------------------------------
 	<stdio.h>
 	<stdlib.h>
