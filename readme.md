@@ -3,17 +3,11 @@
 File structure
 --------------------------------------------------------------------------------------
 - client.c  /*client file used to send the request*/
-- 
 - request_listener.c /*server file*/
-- 
 - configs.h  /*a header file containing all directives*/
-- 
 - dispatcher_queue.h /*queue used for thread pooling for dispatcher*/
-- 
 - server_thread_queue.h /*queue used for thread pooling in server*/
-- 
 - dll_loader.h /*contains all the functions required for the dll to execute*/
-- 
 - unit_test.c /*testing*/
 --------------------------------------------------------------------------------------
 Compile (Please refer to examples):
